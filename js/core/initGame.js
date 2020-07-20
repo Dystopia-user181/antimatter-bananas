@@ -7,8 +7,8 @@ let initPlayer = {
 	lastTick: performance.now()
 };
 let player = initPlayer;
-let time = 10;
-let m = 2;
+let time = 25;
+let m = 15;
 let el = {
 	bananaamt: document.getElementById("bananaamt"),
 	amamt: document.getElementById("antimatteramt"),	
