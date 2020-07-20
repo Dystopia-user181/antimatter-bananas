@@ -1,6 +1,4 @@
-function toSci(num, places, placesafter1000) {
-	if (places == undefined) places = 0;
-	if (placesafter1000 == undefined) placesafter1000 = 2;
+function toSci(num, places=0, placesafter1000=2) {
 	num = new Decimal(num);
 	return (num.e < 3) ? (num.m*Math.pow(10, num.e)).toFixed(places) : `${num.m.toFixed(placesafter1000)}e${num.e}`
 }
