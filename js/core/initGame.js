@@ -8,7 +8,7 @@ let initPlayer = {
 };
 let player = initPlayer;
 let time = 25;
-let m = 15;
+let m = 12;
 let el = {
 	bananaamt: document.getElementById("bananaamt"),
 	amamt: document.getElementById("antimatteramt"),	

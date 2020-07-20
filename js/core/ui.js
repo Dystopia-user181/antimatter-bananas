@@ -1,6 +1,6 @@
 function toSci(num, places=0, placesafter1000=2) {
 	num = new Decimal(num);
-	return (num.e < 3) ? (num.m*Math.pow(10, num.e)).toFixed(places) : `${num.m.toFixed(placesafter1000)}e${num.e}`
+	return (num.e < 3) ? (num.m*Math.pow(10, num.e)).toFixed(places) : `${Math.min(num.m, 9.99).toFixed(placesafter1000)}e${num.e}`
 }
 function updateUI() {
 	el.bananaamt.innerText = `you have ${toSci(player.bananas)} bananas`;
